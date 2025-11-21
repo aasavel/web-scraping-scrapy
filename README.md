@@ -12,21 +12,22 @@ This repository contains Python script to scrape a webpage (scrapethissite.com) 
 ## Project Structure
 ```
 web-scraping-scrapy/
-│ scrapy.cfg
-│ pyproject.toml
-│ README.md
 │ .gitignore
-│
+│ README.me
+│ pyproject.toml
 └── scrapytutorial/
-    ├── __init__.py 
-    ├── items.py
-    ├── middlewares.py             
-    ├── pipelines.py      
-    ├── settings.py       
-    └── spiders/
-        ├── filmscraper.py 
-        ├── films.json
-        └── films.xlsx 
+    ├── scrapy.cfg
+    └── scrapytutorial/
+        ├── __init__.py 
+        ├── items.py
+        ├── middlewares.py             
+        ├── pipelines.py      
+        ├── settings.py       
+        └── spiders/
+            ├── __init__.py 
+            ├── filmscraper.py 
+            ├── films.json
+            └── films.xlsx 
 ```
 
 ## Installation
@@ -40,7 +41,7 @@ web-scraping-scrapy/
    ```
 3. **Running the Spider**: 
    ```
-   cd scrapytutorial/spiders
+   cd scrapytutorial/scrapytutorial/spiders
    poetry run scrapy runspider filmscraper.py
    ```
 
